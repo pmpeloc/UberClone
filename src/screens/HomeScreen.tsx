@@ -7,7 +7,7 @@ export const HomeScreen = () => {
     <SafeAreaView style={tw`bg-white h-full`}>
       <View style={tw`p-5`}>
         <Image
-          style={{ width: 100, height: 100, resizeMode: 'contain' }}
+          style={styles.logo}
           source={{ uri: 'https://links.papareact.com/gzs' }}
         />
       </View>
@@ -16,7 +16,9 @@ export const HomeScreen = () => {
 };
 
 const styles = StyleSheet.create({
-  text: {
-    color: 'blue',
+  logo: {
+    width: 100,
+    height: 100,
+    resizeMode: 'contain',
   },
 });
